@@ -13,17 +13,6 @@ provider "aws"{
    region = "ap-south-1"
 }
 
-variable "name"{
-    type = string
-}
-
-variable "amiin"{
-    type = string
-}
-
-variable "itype"{
-    type = string
-}
 
 resource "aws_instance" "module-aws-instance" {
   ami = var.amiin
